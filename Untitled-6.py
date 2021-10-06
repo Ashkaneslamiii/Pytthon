@@ -1,10 +1,11 @@
-n = int(input())
+def fibonaci (n):
+    if n<0:
+        print("Incorrect Input ")
+    elif n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonaci(n-1) + fibonaci(n-2)
 
-if n <= 1:
-    print(n) 
-elif n > 1:
-
-    for i in range (n):
-        sum = i + i-1
-        print(sum)
-        
+print(fibonaci(9))
